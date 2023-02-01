@@ -5,8 +5,8 @@ tasks:
     command: docker build -t app
 
   - name: Run
-    init: echo 'running docker image'
-    command: docker run app
+    init: echo 'installing requirements'
+    command: python -m pip install requirements.txt
 
 # List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
 ports:
