@@ -15,6 +15,11 @@ data_dir = pathlib.Path('plantvillage')
 
 folders = os.listdir(data_dir)
 
-for folder in folders:
-    dir = pathlib.Path('plantvillage/'+folder)
-    print(   len(list(dir.glob('*.JPG')))  )
+# for folder in folders:
+#     dir = pathlib.Path('plantvillage/'+folder)
+#     print(   len(list(dir.glob('*.JPG')))  )
+
+bacterial_spot = list(data_dir.glob('Tomato___Bacterial_spot/*'))
+
+img = np.array(PIL.Image.open(bacterial_spot[0]))
+print(img.shape)
