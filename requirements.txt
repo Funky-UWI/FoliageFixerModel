@@ -3,3 +3,5 @@ Keras
 numpy
 matplotlib
 pathlib
+opencv-python
+opencv-python-headless
