@@ -5,3 +5,9 @@ matplotlib
 pathlib
 opencv-python
 opencv-python-headless
+torch
+torchvision
+segmentation-models-pytorch
+onnx
+onnx-tf
+tensorflow-addons
